@@ -26,7 +26,7 @@ html {
     /*tablet screen*/
     @media screen and (min-width:768px) {
         .container{
-        width: 768px;
+       
         display: flex;
         margin-left: 0;
         margin-right: 0;
@@ -35,7 +35,8 @@ html {
     /*desktop screen*/
     @media screen and (min-width:1158px) {
         .container {
-        max-width: 1158px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -74,7 +75,7 @@ img {
     /*desktop screen*/
     @media screen and (min-width:1158px) {
         .section{
-        width:1158px;
+       
         padding-top: 120px;
         padding-bottom: 120px;
     }
@@ -89,7 +90,7 @@ textarea{
 .page-heder{
     /* phone screen*/
     background-color: FFFFFF;
-    padding-top: 24px;
+    padding-top: 22px;
     padding-bottom: 24px;
     height: 72px;
     margin: auto;
@@ -100,18 +101,24 @@ textarea{
 }
 /*tablet screen*/
     @media screen and (min-width:768px){
-        .page-heder{
-            display: flex;
-            width: 768px;
+        .page-heder{ 
             height: 70px;  
         }
     }
       /*desktop screen*/
       @media screen and (min-width:1158px){
         .page-heder{
-    
+            height: 72px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            box-shadow: 0px 2px 1px rgb(46 47 66 / 8%), 
+            0px 1px 1px rgb(46 47 66 / 16%), 0px 1px 6px 
+            rgb(46 47 66 / 8%);
+            margin: 0;
+            
+}
         }
-    }
+    
 
 .header-navigation {
      /* phone screen*/
@@ -128,6 +135,8 @@ textarea{
 /*desktop screen*/
     @media screen and (min-width:1158px){
         .header-navigation{
+            display: flex;
+            justify-content: space-between;
     
 }
 }
@@ -145,7 +154,10 @@ textarea{
 /*desktop screen*/
     @media screen and (min-width:1158px){
         .main-nav{
-    
+            display: flex;
+            align-items: center;
+            margin-left: 0;
+            margin-right: 0;
     }
 }
 .logo {
@@ -163,7 +175,8 @@ textarea{
     /*desktop screen*/
     @media screen and (min-width:1158px){
         .logo{
-            
+            padding-bottom: 25px;
+           
            
             
            
@@ -248,7 +261,7 @@ textarea{
 .link {
      /* phone screen*/
       /*tablet screen*/
-    /*desktop screen*/
+    
 }
     @media screen and (min-width:1158px){
         .link {
@@ -258,7 +271,7 @@ textarea{
     line-height: 1.5;
     letter-spacing: 0.02em;
     display: block;
-    padding-bottom: 22px;
+    padding-bottom: 21px;
     transition-duration: var(--time-hover-focus);
     transition-timing-function: var(--speed);
     transition-property: background-color;
@@ -269,6 +282,8 @@ textarea{
     color: #4D5AE5;
     
 }
+/*desktop screen*/
+
 .menu-hamburger-icon {
 
 }
@@ -368,11 +383,11 @@ textarea{
 /*desktop screen*/
 @media screen and (min-width:1158px){
 .hero {
-max-width: 1440px;
+max-width: 1158px;
     min-height: 603;
     margin: auto;
-    padding-top: 192px;
-    padding-bottom: 192px; 
+    padding-top: 188px;
+    padding-bottom: 188px; 
 }   
 }
 .hero-title{
@@ -386,13 +401,11 @@ max-width: 1440px;
     /*desktop screen*/
 @media screen and (min-width:1158px){
     .hero-title{
-        width: 318px;
         font-weight: 600;
         font-size: 56px;
         line-height: 1.1;
-        height: 80px; 
         letter-spacing: 0.02em;
-        padding-bottom: 48p;  
+        margin-bottom: 48px; 
 
     }
 }
@@ -852,7 +865,7 @@ footer {
 }
 .container-portfolio {
     margin-bottom: 0;
-    width: 1158px;
+    
     padding-left: 12px;
     padding-right: 12px;
     margin-left: auto;
