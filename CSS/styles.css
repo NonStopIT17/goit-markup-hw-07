@@ -760,6 +760,7 @@ color: #434455;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 .custemer-link {
     width:168px;
@@ -831,7 +832,11 @@ color: #434455;
         height: 88px;
     }
 }
-
+.section-heder.customers-p{
+    margin-top: 0;
+    margin-bottom: 72px;
+    font-size: 36px;
+}
 
 .companies .custemer-link {
     display: flex;
@@ -846,27 +851,33 @@ color: #434455;
     cursor: pointer;
     transition: border var(--time-animation-normal) var(--timing-function),
         color var(--time-animation-normal) var(--timing-function);
+        height: 58px;
+        width: 98px;
+        
 }
 
 .companies .custemer-link:hover,
 .companies .custemer-link:focus {
-    border: 1px solid var(--Pressed-state);
-    color: var(--Pressed-state);
+    border: 1px solid var(--logo-color);
+    color: var(--logo-color);
 }
 
 .custemer-icon {
     fill: currentColor;
-    width: 110px;
-    height: 56px;
+    height: 40px;
 }
 
 @media screen and (min-width:768px) {
     .custemer-icon {
         
-        width: 104px;
+        
         height: 56px;
     }
 }
+
+
+
+
 /*footer*/
 footer {
     display: block;
