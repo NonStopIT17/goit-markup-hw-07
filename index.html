@@ -11,26 +11,16 @@
     </head>
   <body>
 <!--Header-->
-    <header class="page-heder">
+    <header class="page-header">
       <div class="container header-navigation">
       <nav class="container main-nav" >
         <a href="/" class="logo">WEB<span class="logo-web">STUDIO</span></a>
-        <button
-        class="menu-toggle-mobile js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-      <svg class="menu-hamburger" width="30" height="19">
-        <use href="./images/icons.svg#icon-charm-menu-hamburger"></use>
-      </svg>
-      </button>
         <ul class="site-nav_list" >
           <li class="item item-link"><a href="./index.html" class="link">Studio</a></li>
           <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
           <li class="item"><a href="/" class="link">Contacts</a></li>
         </ul>
       </nav>
-
   <!--Mail/Phone numbers-->
         <ul class="info">
           <li class="item">
@@ -40,6 +30,15 @@
             <a href="tel:+110001111111" class="contacts_link">+11 (000) 111-11-11</a>
           </li>
         </ul>
+        <button type="button"
+        class="menu-toggle-mobile js-open-menu"
+        aria-expanded="false"
+        aria-controls="menu-conteiner"
+      >
+      <svg class="menu-hamburger" >
+        <use href="./images/icons.svg#burger"></use>
+      </svg>
+      </button>
       </div>
     </header>
     <main>
@@ -47,7 +46,7 @@
       <section class="hero">
         <h1 class="hero-title">
           Effective Solutions <br/>
-          for Your Bussines
+          for Your Business
         </h1>
         <button class="button-style" data-modal-open> Order Service </button>
       </section>
@@ -59,10 +58,10 @@
         <li class="icon-section-one">
           <div class="icon">
           <svg class="icon-section-one" width="64" height="64">
-            <use href="./images/icons.svg#icon-strategy"></use>
+            <use href="./images/icons.svg#icon-antenna"></use>
           </svg>
           </div>
-          <div>
+          <div class="section-one-div">
           <h3 class="section-title">Strategy</h3>
           <p class="section-text">
             Our goal is to identify the business problem to walk away with the
@@ -73,38 +72,44 @@
         <li class="icon-section-one">
           <div class="icon">
             <svg class="icon-section-one" width="64" height="64">
-              <use href="./images/icons.svg#icon-punctuality"></use>
+              <use class="icon-clock" href="./images/icons.svg#icon-clock"></use>
             </svg>
           </div>
+          <div class="section-one-div">
           <h3 class="section-title">Punctuality</h3>
           <p class="section-text">
             Bring the key message to the brand's audience for the best price
             within the shortest possible time.
           </p>
+          </div>
         </li>
         <li class="icon-section-one">
           <div class="icon">
             <svg class="icon-section-one" width="64" height="64">
-              <use href="./images/icons.svg#icon-diligence"></use>
+              <use href="./images/icons.svg#icon-diagram-1"></use>
             </svg>
           </div>
+          <div class="section-one-div">
           <h3 class="section-title">Diligence</h3>
           <p class="section-text">
             Research and confirm brands that present the strongest digital
             growth opportunities and minimize risk.
           </p>
+          </div>
         </li>
         <li class="icon-section-one">
           <div class="icon">
             <svg class="icon-section-one" width="64" height="64">
-              <use href="./images/icons.svg#icon-technologies"></use>
+              <use href="./images/icons.svg#icon-astronaut"></use>
             </svg>
           </div>
+          <div class="section-one-div">
           <h3 class="section-title">Technologies</h3>
           <p class="section-text">
             Design practice focused on digital experiences. We bring forth a
             deep passion for problem-solving.
           </p>
+          </div>
         </li>
       </ul>
     </div>
@@ -128,14 +133,18 @@
     </section>
 <!--Section 3-->
     <section class="section our-team">
+      <h2 class="section-header team">Our Team</h2>
       <div class="container">
-      <h2 class="section-heder">Our Team</h2>
+      
       <ul class="section-img">
+        <div class="team-container">
         <li class="img">
           <img
+          srcset="./images\our_team\img_264.jpg 1x, 
+          ./images\our_team\img_528.jpg 2x,"
+            src="./images\our_team\img_264.jpg"
             width="264"
             height="260"
-            src="./images/mark.jpg"
             alt="Product Designer - Mark Guerrero"
           />
           <div class="subtitle-our-team">
@@ -173,11 +182,15 @@
         </ul>
         </div>
         </li>
+      </div>
+      <div class="team-container">
         <li class="img">
           <img
+          srcset="./images\our_team\img_264-1.jpg 1x, 
+          ./images\our_team\img_528-1.jpg 2x,"
+            src="./images\our_team\img_264-1.jpg"
             width="264"
             height="260"
-            src="./images/tom.jpg"
             alt="Frontend Developer - Tom Ford"
           />
           <div class="subtitle-our-team">
@@ -215,11 +228,15 @@
         </ul>
         </div>
         </li>
+      </div>
+      <div class="team-container">
         <li class="img">
           <img
+            srcset="./images\our_team\img_264-2.jpg 1x, 
+              ./images\our_team\img_528-2.jpg 2x,"
+             src="./images\our_team\img_264-2.jpg"
             width="264"
             height="260"
-            src="./images/camila.jpg"
             alt="Marketing - Camila Garcia"
           />
           <div class="subtitle-our-team">
@@ -257,13 +274,17 @@
         </ul>
         </div>
         </li>
+      </div>
+      <div class="team-container">
         <li class="img">
           <img
-            width="264"
-            height="260"
-            src="./images/daniel.jpg"
-            alt="UI Designer - Daniel Wilson"
-          />
+                srcset="./images\our_team\img_264-3.jpg 1x, 
+              ./images\our_team\img_528-3.jpg 2x,"
+                src="./images\our_team\img_264-3.jpg"
+                alt="UI Designer - Daniel Wilson"
+                width="264"
+                height="260"
+              />
           <div class="subtitle-our-team">
           <h3 class="section-title-team">Daniel Wilson</h3>
           <p class="team-to-do">UI Designer</p>
@@ -299,50 +320,51 @@
         </ul>
         </div>
         </li>
+      </div>
       </ul>
     </div>
     </section>
 <!--Section 4-->
-    <section class="section">
-      <div class="container">
+    <section class="section customers">
+      <div class="container companies-cust">
         <h2 class="section-heder">Customers</h2>
       <ul class="companies">
-        <li>
+        <li class="item">
           <a href="#" class="custemer-link">
             <svg class="custemer-icon" width="104" height="56">
               <use  href="./images/icons.svg#icon-ustomers-one"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="#" class="custemer-link">
             <svg class="custemer-icon" width="104" height="56">
               <use  href="./images/icons.svg#icon-group-two"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="#" class="custemer-link">
             <svg class="custemer-icon" width="104" height="56">
               <use href="./images/icons.svg#icon-group-three"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="#" class="custemer-link">
             <svg class="custemer-icon" width="104" height="56">
               <use href="./images/icons.svg#icon-group-four"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="#" class="custemer-link">
             <svg class="custemer-icon" width="104" height="56">
               <use href="./images/icons.svg#icon-group-five"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="item">
           <a href="#" class="custemer-link">
             <svg class="custemer-icon" width="104" height="56">
               <use href="./images/icons.svg#icon-group-six"></use>
@@ -468,67 +490,68 @@
     </div>
     </div>
     <!--Mobile menu-->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-          <svg class="x" width="8" height="8">
-            <use href="./images/icons.svg#icon-x"></use>
-          </svg>
-        </button>
+    <div class="menu-conteiner js-menu-container" id="menu-conteiner">
+      <button js-close-menu class="button-modal js-close-menu">
+      <svg class="x" width="8" height="8">
+        <use href="./images/icons.svg#icon-x"> </use>
+      </svg>
+      </button>
 
-      <ul class="mobile-menu">
-        <ul class="mobile-menu">
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-link link" href="">Studio</a>
-          </li>
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-link link" href="">Portfolio</a>
-          </li>
-          <li class="mobile-menu-item">
-            <a class="mobile-menu-link link" href="">Contacts</a>
-          </li>
-        </ul>
-      </ul>
-       
-      <ul class="mobile-contacts">
-        <li class="mobile-contacts-item list">
-          <a class="mobile-contacts-link accent" href="tel:+11(000)1111111">+11 (000) 111-11-11</a> 
+<ul class="mobile-menu">
+    <li class="item">
+      <a href="./index.html" class="link current">Studio</a>
+    </li>
+    <li class="item">
+      <a href="./Portfolio.html" class="link">Portfolio</a>
+    </li>
+    <li class="item">
+      <a href="./contacts.html" class="link">Contacts</a>
+    </li>
+  </ul>
+  <ul class="mobile-contacts list">
+  
+  <li class="item mobile-contacts-item">
+    <a href="tel:+11(000)1111111" class="tel-mob link">+11 (000) 111-11-11</a>
+  </li>
+  <li class="item">
+    <a href="mailto:info@devstudio.com" class="mail-mob link"
+      >info@devstudio.com</a
+    >
+  </li>
+</ul>
+
+<ul class="soc-list-mob list">
+        <li class="item">
+          <a href="" class="social-list-link link">
+            <svg class="mobile-social-media-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-team"></use>
+            </svg>
+          </a>
         </li>
-        <li class="mobile-contacts-item list">
-          <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a> 
+        <li class="item">
+          <a href="" class="social-list-link link">
+            <svg class="mobile-social-media-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-team"></use>
+            </svg>
+          </a>
         </li>
-        
+        <li class="item">
+          <a href="" class="social-list-link link">
+            <svg class="mobile-social-media-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-team"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="social-list-link link">
+            <svg class="mobile-social-media-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-team"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
-      <ul class="mobile-social-media">
-        <li >
-      <a href="#" class="mobile-social-media-links">
-        <svg class="mobile-social-media-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-instagram-team"></use>
-        </svg>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="mobile-social-media-links">
-        <svg class="mobile-social-media-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-twitter-team"></use>
-        </svg>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="mobile-social-media-links">
-        <svg class="mobile-social-media-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-facebook-team"></use>
-        </svg>
-      </a>
-    </li>
-    <li>
-      <a href="#" class="mobile-social-media-links">
-        <svg class="mobile-social-media-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-linkedin-team"></use>
-        </svg>
-      </a>
-    </li>
-    </ul>
     </div>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
