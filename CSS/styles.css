@@ -25,8 +25,6 @@ html {
     /*tablet screen*/
     @media screen and (min-width:768px) {
         .container{
-       
-        display: flex;
         margin-left: 0;
         margin-right: 0;
     }
@@ -101,8 +99,6 @@ textarea{
       @media screen and (min-width:1158px){
         .page-header{
             height: 72px;
-            padding-top: 24px;
-            padding-bottom: 24px;
             box-shadow: 0px 2px 1px rgb(46 47 66 / 8%), 
             0px 1px 1px rgb(46 47 66 / 16%), 0px 1px 6px 
             rgb(46 47 66 / 8%);
@@ -124,6 +120,7 @@ textarea{
 @media screen and (min-width:768px){
     .header-navigation{
     display: flex;
+    align-items: unset;
 }
 }
 /*desktop screen*/
@@ -162,18 +159,12 @@ textarea{
     font-size: 18px;
     line-height: 1.5;
     padding-bottom: 0px;
-    /*tablet screen*/
-    
     }
+     /*tablet screen*/
     /*desktop screen*/
-    @media screen and (min-width:1158px){
+    @media screen and (min-width:768px){
         .logo{
             padding-bottom: 25px;
-           
-           
-            
-           
-            
         }
     }
 
@@ -185,7 +176,7 @@ textarea{
    line-height: 1.5;
    margin-right: 72px;
    font-family: Raleway;
-    /*tablet screen*/
+    
 
     
     }
@@ -195,85 +186,64 @@ textarea{
            
         }
     }
-
-.site-nav_list {
-     
-    
-    
+/*tablet screen*/
+@media screen and (min-width:767.8px){
+    .site-nav_list {
+        display: flex; 
+        row-gap: 40px ;
+        column-gap: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
-    /* phone screen*/
-  /*tablet screen*/
-  @media (max-width:767.8px){
+}
+@media (max-width:767.8px){
     .site-nav_list{
         display: none;
     }
 }
-/*tablet screen*/
-@media screen and (min-width:768px){
-    .site-nav_list{
-    display: flex; 
-    row-gap: 40px ;
-    column-gap: 40px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-}
-    /*desktop screen*/
-    @media screen and (min-width:1158px){
-        .site-nav_list{
-       
+    /*tablet screen*/
+    @media screen and (min-width:767.8px){
+    .item.item-link {
+        position: relative;
+        padding-bottom: 0px;
     }
 }
-.item.item-link {
-     /* phone screen*/
-      /*tablet screen*/
-    }
-    /*desktop screen*/
-    @media screen and (min-width:1158px){
-        .item.item-link{
-    position: relative;
-    padding-bottom: 0px;}
-}
-
-.item.item-link::before {
-     /* phone screen*/
-      /*tablet screen*/
-    /*desktop screen*/
-    
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: rgba(64, 75, 191, 1);
-    border-radius: 2px;
-    }
-
-.link {
-     /* phone screen*/
-      /*tablet screen*/
-    
-}
-    @media screen and (min-width:1158px){
-        .link {
-    color:var(--title-text-color);
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    display: block;
-    padding-bottom: 21px;
-    transition-duration: var(--time-hover-focus);
-    transition-timing-function: var(--speed);
-    transition-property: background-color;
+    /*tablet screen*/
+    @media screen and (min-width:767.8px){
+    .item.item-link::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: rgba(64, 75, 191, 1);
+        border-radius: 2px;
     }
 }
-.link:hover,
-.link:focus{
-    color: #4D5AE5;
-    
+    /*tablet screen*/
+    @media screen and (min-width:767.8px){
+    .link {
+        color:var(--title-text-color);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        display: block;
+        padding-bottom: 22px;
+        transition-duration: var(--time-hover-focus);
+        transition-timing-function: var(--speed);
+        transition-property: background-color;
+    }
+}
+    /*tablet screen*/
+    @media screen and (min-width:767.8px){
+    .link:hover,
+    .link:focus{
+        color: #4D5AE5;
+        
+    }
 }
 /*desktop screen*/
 
@@ -339,11 +309,12 @@ textarea{
     .info{
         display: block;
         margin: 0;
-        font-weight: 400;
+       
+        /*font-weight: 400;
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 0.04em;
-        color: #434455;
+        color: #434455;*/
     }
 }
 /*desktop screen*/
@@ -360,7 +331,7 @@ textarea{
 
 .contacts_link {
     color:var(--primary-text-color);
-    
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     transition-duration: var(--time-hover-focus);
@@ -411,16 +382,20 @@ max-width: 1158px;
     text-transform: capitalize;
     
 }
-    /*desktop screen*/
-@media screen and (min-width:1158px){
+/*tablet screen*/
+   
+@media screen and (min-width:768px){
     .hero-title{
+        margin-bottom: 40px;
+        color: var(--primary-bg-color);
         font-weight: 600;
         font-size: 56px;
-        line-height: 1.1;
+        line-height: calc(60/56);
         letter-spacing: 0.02em;
-        margin-bottom: 48px; 
+        text-align: center;
 
     }
+     /*desktop screen*/
 }
 .button-style{
     height: 56px;
@@ -829,6 +804,7 @@ color: #434455;
     .companies .item {
         width: 168px;
         height: 88px;
+       
     }
 }
 .section-heder.customers-p{
@@ -842,8 +818,7 @@ color: #434455;
 
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    
     color: #8E8F99;
     border: 1px solid #8E8F99;
     border-radius: 4px;
@@ -854,7 +829,14 @@ color: #434455;
         width: 98px;
         
 }
-
+/*tablet screen*/
+@media screen and (min-width:768px) {
+    .companies .custemer-link {
+        width: 100%;
+        height: 100%;
+       
+    }
+}
 .companies .custemer-link:hover,
 .companies .custemer-link:focus {
     border: 1px solid var(--logo-color);
@@ -873,9 +855,6 @@ color: #434455;
         height: 56px;
     }
 }
-
-
-
 
 /*footer*/
 footer {
@@ -900,7 +879,7 @@ footer {
 }
 /*tablet screen*/
 @media screen and (min-width:768px) {
-    .footer-footer .container {
+    .footer-footer.container {
         display: flex;
         flex-wrap: wrap;
         text-align: left;
@@ -908,7 +887,7 @@ footer {
     }
 }
 @media screen and (min-width:1158px) {
-    .footer-footer .container {
+    .footer-footer.container {
         flex-wrap: nowrap;
     }
 }
