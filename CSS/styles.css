@@ -162,7 +162,6 @@ textarea{
     font-size: 18px;
     line-height: 1.5;
     padding-bottom: 0px;
-    display: flex;
     /*tablet screen*/
     
     }
@@ -808,7 +807,7 @@ color: #434455;
         display: flex;
     }
 }
-
+/*tablet screen*/
 @media screen and (min-width:768px) {
     .companies {
         gap: 24px;
@@ -825,7 +824,7 @@ color: #434455;
         height: 88px;
     }
 }
-
+/*tablet screen*/
 @media screen and (min-width:768px) {
     .companies .item {
         width: 168px;
@@ -883,48 +882,108 @@ footer {
     display: block;
 }
 .section-footer{
-    background-color: #2E2F42;
-    padding: 100px 0px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+@media screen and (min-width:1158px) {
+    .section-footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 .footer-footer {
     display: flex;
 }
+.footer-footer.container {
+    display: block;
+    text-align: center;
+}
+/*tablet screen*/
+@media screen and (min-width:768px) {
+    .footer-footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        padding-left: 108px;
+    }
+}
+@media screen and (min-width:1158px) {
+    .footer-footer .container {
+        flex-wrap: nowrap;
+    }
+}
 /*First info*/
-.footer-div-one {
-    margin-right: 120px;
-    margin-left: 0;
+.container .footer-div-one {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 72px;
     padding: 0;
 }
-.footer-logo {
-    color: #F4F4FD;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    font-family: Raleway;
+/*tablet screen*/
+@media screen and (min-width:768px) {
+    .container .footer-div-one {
+        margin: 0;
+        margin-right: 24px;
+    }
 }
-.footer-text{
-    color: #E7E9FC;
-    font-size: 16px;
+@media screen and (min-width:1158px) {
+    .container .footer-div-one {
+        margin-right: 120px;
+    }
+}
+.section-footer .footer-logo {
+    color: #F4F4FD;
+    margin-bottom: 16px;
+}
+
+.section-footer,
+.section-footer .less {
+    background-color: #2E2F42;
+    color: var(--logo-color);
+
+}
+
+.section-footer .footer-text {
+    color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 0;
-    font-weight: 400;
-    width: 264px;
-    height: 110px;
+    text-align: center;
+    vertical-align: text-top;
     margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
+}
+/*tablet screen*/
+@media screen and (min-width:768px) {
+    .section-footer .footer-text {
+        text-align: left;
+        width: 264px;
+        margin-bottom: 0;
+    }
 }
 /*Second info*/
 .footer-div-two {
+    margin-bottom: 72px;
     font-size: 16px;
-    margin-bottom: 16px;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-left: 0;
-    margin-right: 80px;
-    margin-bottom: 0;
     padding: 0;
+}
+/*tablet screen*/
+@media screen and (min-width:768px) {
+    .footer-div-two {
+        margin-right: 80px;
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .footer-div-two {
+
+        margin-bottom: 0;
+    }
 }
 .social-media-footer {
     color:#FFFFFF;
@@ -935,6 +994,8 @@ footer {
 }
 .sm-icon {
     display: flex;   
+    margin: 0;
+    justify-content: center;
 }
 .footer-list {
     margin-right: 16px;
@@ -965,8 +1026,14 @@ footer {
     padding: 0;
 }
 .footer-form-div {
-    display: flex;
+    
     align-items: center;
+}
+/*tablet screen*/
+@media screen and (min-width:768px) {
+    .footer-form-div {
+        display: flex;
+    }
 }
 .footer-form-email {
     width: 264px;
@@ -981,6 +1048,7 @@ footer {
     background-color: transparent;
     padding-left: 16px;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 16px;
 }
 .btn-footer {
     font-family: Roboto;
@@ -993,7 +1061,7 @@ footer {
     cursor: pointer;
     border-radius: 4px;
     border:transparent ;
-    display: flex;
+ 
     min-width: 170px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition-duration: var(--time-hover-focus);
@@ -1001,8 +1069,9 @@ footer {
     transition-property: background-color;
     padding: 8px 24px;
     gap: 32px;
-    margin-left: 15.5px;
+    
 }
+
 .btn-footer:hover{
     background-color: #4D5AE5;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
@@ -1013,6 +1082,13 @@ footer {
 .btn-footer:focus{
     background-color: #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/*tablet screen*/
+@media screen and (min-width:768px) {
+    .btn-footer {
+        display: flex;
+        margin-left: 15.5px;
+    }
 }
 .svg-send {
     align-items: center;
@@ -1143,26 +1219,35 @@ footer {
 }
 /*Backdrop*/
 .backdrop {
-    width: 100%;
-    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(46, 47, 66, 0.4);
-    transition-duration: var(--time-hover-focus);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    backdrop-filter: blur(2px);
+
+    opacity: 1;
+    transition: visibility 500ms, opacity 500ms;
 }
+
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
 }
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%)  ;
+}
+
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 408px;
-    height: 576px;
+    transform: translate(-50%, -50%)scale(1) rotateX(360deg);
+    min-width: 100vw;
+    min-height: 586px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -1170,6 +1255,24 @@ footer {
     border-radius: 4px;
     opacity:1;
 }
+@media screen and (min-width:480px) {
+    .modal {
+        min-width: 392px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .modal {
+        min-width: 408px;
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .modal {
+        min-height: 584px;
+    }
+}
+
 .button-modal {
     width: 24px;
     height: 24px;
@@ -1265,14 +1368,19 @@ footer {
 /*Checkbox*/
 .check {
     display: flex;
-    padding-left: 1.2em;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.04em;
-    color: #757575;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    gap: 2px;
-    margin-bottom: 24px;
+    align-items: center;
+    gap: 8px;
+    
+}
+.checkbox {
+    margin-bottom: 24px;}
+
+/*tablet screen*/
+@media screen and (min-width:768px) {
+    .check {
+        
+        
+    }
 }
 .check-input {
     position: absolute;
@@ -1285,10 +1393,15 @@ footer {
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
     background-color: #FFFFFF;
-    margin-left: -1.2em;
+    
 }
 .check-text {
-    margin-left: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16/12);
+    letter-spacing: 0.04em;
+    color: #757575;
+    margin-left: 30px;
 }
 .check-input:checked + .check-box  {
     background-image: url(../icons/checkbox.svg);
@@ -1309,9 +1422,17 @@ footer {
     order: 1;
     flex-grow: 0;
 }
+.form-button {
+    position: relative;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
 .button-send {
-    position: absolute;
-    left: 119px;
+    width: 169px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Mobile menu */
 .menu-conteiner {
