@@ -66,16 +66,16 @@ img {
     /*tablet screen*/
     @media screen and (min-width:768px) {
         .section{
-        width: 768px;
+        
     }
 }
     /*desktop screen*/
     @media screen and (min-width:1200px) {
         .section{
-        min-width:1200px;
+        
         padding-top: 120px;
         padding-bottom: 120px;
-       max-width: 1440px;
+       
       
     }
 }
@@ -412,7 +412,6 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 /*desktop screen*/
 @media screen and (min-width:1200px){
 .hero {
-max-width: 1440px;
     min-height: 603;
     margin: auto;
     padding-top: 188px;
@@ -500,16 +499,11 @@ max-width: 1440px;
     margin-right: auto;
 }
 
-@media screen and (min-width:748px){
-    .section-one{
-        width: 768px;
-        
-    }
-    }
+
 
 @media screen and (min-width:1200px){
 .section-one{
-    width:1200px;
+    
     padding-top: 120px;
     padding-bottom: 120px;
     
@@ -518,6 +512,8 @@ max-width: 1440px;
 .container-one{
     padding-left: 12px;
     padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (min-width:748px){
@@ -831,11 +827,7 @@ color: #434455;
     row-gap: 72px;
     column-gap: 16px;
 }
-@media screen and (min-width:768px) {
-    .section-one.customers{
-        width: 768px;
-    }
-}
+
 @media screen and (min-width:768px) and (max-width:1199.98px) {
     .companies-cust {
         padding-left: 108px;
@@ -849,8 +841,8 @@ color: #434455;
     text-align: center;
 }
 .custemer-link {
-    width:168px;
-    height: 88px;
+    width: 118px;
+    height: 56px;
     display: flex;
     background-color: #FFFFFF;
     justify-content: center;
@@ -863,6 +855,14 @@ color: #434455;
     transition-timing-function: var(--speed);
     transition-property: border;
 }
+@media screen and (min-width:768px) {
+    .custemer-link{
+        width:168px;
+        height: 88px;
+    }
+}
+
+
 .custemer-link:hover,
 .custemer-link:focus
 {
