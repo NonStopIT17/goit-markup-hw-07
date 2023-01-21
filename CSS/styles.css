@@ -1311,6 +1311,7 @@ footer {
     margin-right: auto;
 }
 /*Backdrop*/
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -1365,7 +1366,11 @@ footer {
         min-height: 584px;
     }
 }
-
+.x{
+    width: 8px;
+    height: 8px;
+    fill: currentColor;
+}
 .button-modal {
     width: 24px;
     height: 24px;
