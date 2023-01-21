@@ -29,13 +29,13 @@ html {
     }
 }
     /*desktop screen*/
-    @media screen and (min-width:1158px) {
+    @media screen and (min-width:1200px) {
         .container {
         padding-left: 12px;
         padding-right: 12px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 1158px;
+        max-width: 1200px;
         }
     }
 body {
@@ -71,9 +71,9 @@ img {
     }
 }
     /*desktop screen*/
-    @media screen and (min-width:1158px) {
+    @media screen and (min-width:1200px) {
         .section{
-         width:1158px;
+         width:1200px;
         padding-top: 120px;
         padding-bottom: 120px;
         margin-left: auto;
@@ -99,7 +99,7 @@ textarea{
         }
     }
       /*desktop screen*/
-      @media screen and (min-width:1158px){
+      @media screen and (min-width:1200px){
         .page-header{
             background-color: FFFFFF;
             height: 72px;
@@ -130,7 +130,7 @@ textarea{
 }
 }
 /*desktop screen*/
-    @media screen and (min-width:1158px){
+    @media screen and (min-width:1200px){
         .header-navigation{
             display: flex;
             justify-content: space-between;
@@ -149,7 +149,7 @@ textarea{
     
 }
 /*desktop screen*/
-    @media screen and (min-width:1158px){
+    @media screen and (min-width:1200px){
         .main-nav{
             display: flex;
             align-items: center;
@@ -187,7 +187,7 @@ textarea{
     
     }
     /*desktop screen*/
-    @media screen and (min-width:1158px){
+    @media screen and (min-width:1200px){
         .logo-web {
            
         }
@@ -318,7 +318,7 @@ textarea{
     }
 }
 /*desktop screen*/
-@media screen and (min-width:1158px){
+@media screen and (min-width:1200px){
     .info{
         display: flex;
         margin-left: auto;
@@ -405,9 +405,9 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 }
 /*tablet screen*/
 /*desktop screen*/
-@media screen and (min-width:1158px){
+@media screen and (min-width:1200px){
 .hero {
-max-width: 1158px;
+max-width: 1200px;
     min-height: 603;
     margin: auto;
     padding-top: 188px;
@@ -464,13 +464,13 @@ max-width: 1158px;
     transition-timing-function: var(--speed);
     transition-property: background-color;
 }
-@media screen and (min-width:1158px){
+@media screen and (min-width:1200px){
     .button-style{
         min-width: 170px;
     }
 }
 /*desktop screen*/
-@media screen and (min-width:1158px){
+@media screen and (min-width:1200px){
 .button-style:hover{
     background-color: #4D5AE5;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
@@ -505,7 +505,7 @@ max-width: 1158px;
  }
 }
 /*desktop screen*/
-@media screen and (min-width:1158px){
+@media screen and (min-width:1200px){
     .section-list{
         display: flex;
         flex-wrap: nowrap;
@@ -519,7 +519,7 @@ max-width: 1158px;
     justify-content:center;
     align-items:center
 }
-@media screen and (max-width:1157.8px){
+@media screen and (max-width:1198.8px){
     .icon{
         display: none;
     }
@@ -536,12 +536,12 @@ max-width: 1158px;
         width: calc((100% - 50px) / 2);
     }
 }
-@media screen and (min-width:1158px){
+@media screen and (min-width:1200px){
     .icon-section-one:not(:last-child) {
         gap: 0;
     }
 }
-@media screen and (min-width:1158px){
+@media screen and (min-width:1200px){
     .icon-section-one {
         width: 264px;
     }
@@ -565,7 +565,7 @@ max-width: 1158px;
     }
 }
 /*desktop screen*/
-@media screen and (min-width:1158px){
+@media screen and (min-width:1200px){
     .section-title{
         color:var(--title-text-color);
     font-weight: 600;
@@ -591,7 +591,7 @@ color: #434455;
     }
 }  
 /*desktop screen*/
-@media screen and (min-width:1158px){
+@media screen and (min-width:1200px){
     .section-text{
         font-family: 'Roboto';
     font-style: normal;
@@ -613,7 +613,7 @@ color: #434455;
 }
  }
 /*desktop screen*/
-@media screen and (min-width:1158px){
+@media screen and (min-width:1200px){
     .section-one-div{
      width: 264px;
     height: 112px;
@@ -623,7 +623,7 @@ color: #434455;
 .about {
     padding-top: 0;
 }
-@media screen and (max-width:1158px){
+@media screen and (max-width:1200px){
     .about{
         display: none;
     }
@@ -663,7 +663,7 @@ color: #434455;
 }
 
 /*desktop screen*/
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1200px) {
     .our-team {
         padding-bottom: 120px;
     }
@@ -682,7 +682,7 @@ color: #434455;
     }
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1200px) {
     .our-team .conteiner {
         padding-left: 0px;
         padding-right: 0px;
@@ -713,7 +713,7 @@ color: #434455;
     }
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1200px) {
     .section-img {
         flex-wrap: nowrap;
 
@@ -782,7 +782,7 @@ color: #434455;
     row-gap: 72px;
     column-gap: 16px;
 }
-@media screen and (min-width:768px) and (max-width:1157.98px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
     .companies-cust {
         padding-left: 108px;
         padding-right: 108px;
@@ -858,7 +858,7 @@ color: #434455;
        
     }
 }
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1200px) {
     .companies {
         gap: 0;
     }
@@ -920,7 +920,7 @@ footer {
     padding-top: 96px;
     padding-bottom: 96px;
 }
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1200px) {
     .section-footer {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -942,7 +942,7 @@ footer {
         padding-left: 108px;
     }
 }
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1200px) {
     .footer-footer.container {
         flex-wrap: nowrap;
         padding-left: 0;
@@ -962,7 +962,7 @@ footer {
         margin-right: 24px;
     }
 }
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1200px) {
     .container .footer-div-one {
         margin-right: 120px;
         margin-left: 21px;
@@ -1016,7 +1016,7 @@ footer {
     }
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1200px) {
     .footer-div-two {
 
         margin-bottom: 0;
@@ -1304,7 +1304,7 @@ footer {
     }
 }
 
-@media screen and (min-width:1158px) {
+@media screen and (min-width:1200px) {
     .modal {
         min-height: 584px;
     }
@@ -1328,6 +1328,7 @@ footer {
     justify-content: center;
     transition-duration: var(--time-hover-focus);
     transition-timing-function: var(--speed);
+    fill: black;
 }
 .button-modal:hover,
 .button-modal:focus {
