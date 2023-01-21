@@ -20,7 +20,6 @@ html {
     padding-right: 12px;
     margin-left: auto;
     margin-right: auto;
-    
 }
     /*tablet screen*/
     @media screen and (min-width:768px) {
@@ -32,11 +31,13 @@ html {
     /*desktop screen*/
     @media screen and (min-width:1158px) {
         .container {
-            margin-left: auto;
-            margin-right: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1158px;
         }
     }
-
 body {
     background:var(--primary-bg-color);
     color: var(--primary-text-color);
@@ -67,27 +68,29 @@ img {
     @media screen and (min-width:768px) {
         .section{
         width: 768px;
-        }
     }
+}
     /*desktop screen*/
     @media screen and (min-width:1158px) {
         .section{
-            width:1158px;
+         width:1158px;
         padding-top: 120px;
         padding-bottom: 120px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
-   
-
 textarea{
     resize: none;
 }
+
 /*Studio*/
 /*Header*/
 .page-header{
     /* phone screen*/
     padding-top: 24px;
     padding-bottom: 24px;
+    position: relative;
 }
 /*tablet screen*/
     @media screen and (min-width:768px){
@@ -98,11 +101,14 @@ textarea{
       /*desktop screen*/
       @media screen and (min-width:1158px){
         .page-header{
+            background-color: FFFFFF;
             height: 72px;
-            box-shadow: 0px 2px 1px rgb(46 47 66 / 8%), 
-            0px 1px 1px rgb(46 47 66 / 16%), 0px 1px 6px 
-            rgb(46 47 66 / 8%);
-            margin: 0;
+            margin: auto;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+            0px 1px 1px rgba(46, 47, 66, 0.16), 
+            0px 1px 6px rgba(46, 47, 66, 0.08);
             
 }
         }
@@ -309,12 +315,6 @@ textarea{
     .info{
         display: block;
         margin: 0;
-       
-        /*font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 0.04em;
-        color: #434455;*/
     }
 }
 /*desktop screen*/
@@ -349,14 +349,59 @@ textarea{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-    ),
-    url("../images/people_office.jpg");
     text-align: center;
     padding-top: 112px;
     padding-bottom: 112px; 
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    );
+   /* Mobile screen <=428px */
+   background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/bg-img/bg-img-mob@1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+   background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/bg-img/bg-img-mob@2x.jpg);
+}
+}
+/* Mobile screen >=428px */
+@media screen and (min-width:429px) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero/bg-img/bg-img-tab@1x.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 429px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 429px),
+screen and (min-resolution: 192dpi) and (min-width: 429px),
+screen and (min-resolution: 2dppx) and (min-width: 429px) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero/bg-img/bg-img-tab@2x.jpg);
+    }
+}
+
+/* screen >768px */
+@media screen and (min-width:769px) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero/bg-img/bg-img-desk@1x.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px),
+screen and (min-resolution: 192dpi) and (min-width: 769px),
+screen and (min-resolution: 2dppx) and (min-width: 769px) {
+    .hero {
+        background-image: linear-gradient(to right, rgba(24, 22, 22, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero/bg-img/bg-img-desk@2x.jpg);
+    }
 }
 /*tablet screen*/
 /*desktop screen*/
@@ -466,6 +511,7 @@ max-width: 1158px;
         flex-wrap: nowrap;
     }
 }
+
  .icon {
     background-color: #F4F4FD;
     height: 112px;
@@ -482,11 +528,7 @@ max-width: 1158px;
     margin-left: 0;
     margin-right: 0;  
 } 
-@media screen and (max-width:767.8px){
-.icon-section-one:not(:last-child) {
-    margin-bottom: 72px;
-}
-}
+
 @media screen and (min-width:768px){
     .icon-section-one {
         margin-bottom: 0;
@@ -494,6 +536,17 @@ max-width: 1158px;
         width: calc((100% - 50px) / 2);
     }
 }
+@media screen and (min-width:1158px){
+    .icon-section-one:not(:last-child) {
+        gap: 0;
+    }
+}
+@media screen and (min-width:1158px){
+    .icon-section-one {
+        width: 264px;
+    }
+}
+
 .section-title{
     color:var(--title-text-color);
     font-weight: 700;
@@ -723,6 +776,11 @@ color: #434455;
     margin-bottom: 0;
     column-gap: 24px;
     margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
 }
 @media screen and (min-width:768px) and (max-width:1157.98px) {
     .companies-cust {
@@ -769,13 +827,6 @@ color: #434455;
    
 }
 
-.companies {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 16px;
-}
 
 @media screen and (min-width:480px) {
     .companies {
@@ -805,6 +856,11 @@ color: #434455;
         width: 168px;
         height: 88px;
        
+    }
+}
+@media screen and (min-width:1158px) {
+    .companies {
+        gap: 0;
     }
 }
 .section-heder.customers-p{
@@ -889,6 +945,7 @@ footer {
 @media screen and (min-width:1158px) {
     .footer-footer.container {
         flex-wrap: nowrap;
+        padding-left: 0;
     }
 }
 /*First info*/
@@ -908,6 +965,7 @@ footer {
 @media screen and (min-width:1158px) {
     .container .footer-div-one {
         margin-right: 120px;
+        margin-left: 21px;
     }
 }
 .section-footer .footer-logo {
