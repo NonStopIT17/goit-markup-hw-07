@@ -416,6 +416,7 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 /*desktop screen*/
 @media screen and (min-width:1200px){
 .hero {
+    max-width: 1440px;
     min-height: 603;
     margin: auto;
     padding-top: 188px;
@@ -520,12 +521,11 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
     padding-right: 12px;
     margin-left: auto;
     margin-right: auto;
-    width: 428px;
 }
 
 @media screen and (min-width:748px){
     .container-one{
-        width: 768px;
+        
         padding-left: 12px;
         padding-right: 12px;
 }
@@ -1007,7 +1007,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         text-align: left;
-        
+        padding-left: 108px;
     }
 }
 @media screen and (min-width:1200px) {
@@ -1018,13 +1018,16 @@ footer {
 }
 /*First info*/
 .container-one .footer-div-one {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 72px;
-    padding: 0;
+    
 }
 /*tablet screen*/
-
+@media screen and (min-width:748px) {
+    .container-one .footer-div-one {
+        margin-right: 21px;
+        margin-left: 0;
+        padding: 0;
+    }
+}
 @media screen and (min-width:1200px) {
     .container-one .footer-div-one {
         margin-right: 120px;
@@ -1124,6 +1127,13 @@ footer {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+}
+@media screen and (min-width:768px) {
+.footer-div-three {
+    margin-right: auto;
+   
+    padding: 0;
+}
 }
 .footer-form-div {
     
