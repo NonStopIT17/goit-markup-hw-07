@@ -517,6 +517,7 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 }
 }
 .container-one{
+    width: 428px;
     padding-left: 12px;
     padding-right: 12px;
     margin-left: auto;
@@ -525,7 +526,7 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 
 @media screen and (min-width:748px){
     .container-one{
-        
+        width: 748px;
         padding-left: 12px;
         padding-right: 12px;
 }
@@ -1014,16 +1015,21 @@ footer {
     .footer-footer {
         width: 1158px;
         flex-wrap: nowrap;
+        padding-left: 0;
     }
 }
 /*First info*/
 .container-one .footer-div-one {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 72px;
     
 }
-/*tablet screen*/
-@media screen and (min-width:748px) {
+@media screen and (min-width:768px) {
     .container-one .footer-div-one {
-        margin-right: 21px;
+        width: 264px;
+        height: 72px;
+        margin-right: 24px;
         margin-left: 0;
         padding: 0;
     }
@@ -1054,8 +1060,8 @@ footer {
     vertical-align: text-top;
     margin-top: 16px;
     margin-bottom: 16px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*tablet screen*/
 @media screen and (min-width:768px) {
@@ -1078,14 +1084,19 @@ footer {
 /*tablet screen*/
 @media screen and (min-width:768px) {
     .footer-div-two {
-        margin-right: 80px;
+        width: 264px;
+    height: 72px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 72px;
     }
 }
 
 @media screen and (min-width:1200px) {
     .footer-div-two {
-
+        margin-right: 60px;
         margin-bottom: 0;
+    
     }
 }
 .social-media-footer {
@@ -1098,7 +1109,7 @@ footer {
 .sm-icon {
     display: flex;   
     margin: 0;
-    justify-content: center;
+   
 }
 .footer-list {
     margin-right: 16px;
@@ -1126,7 +1137,8 @@ footer {
 .footer-div-three {
     margin-left: 0;
     margin-right: 0;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 21px;
 }
 @media screen and (min-width:768px) {
 .footer-div-three {
