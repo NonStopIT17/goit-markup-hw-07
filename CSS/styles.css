@@ -76,6 +76,7 @@ textarea{
      display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 440px;
      
       
 }
@@ -84,7 +85,7 @@ textarea{
     .header-navigation{
     display: flex;
     align-items: unset;
-    width: 768px;
+    max-width: 768px;
 }
 }
 /*desktop screen*/
@@ -92,7 +93,7 @@ textarea{
         .header-navigation{
             display: flex;
             justify-content: space-between;
-    
+    max-width: 1200px;
 }
 }
 .main-nav {
@@ -487,11 +488,21 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 
 }
 
+@media screen and (min-width:428px){
+    .section-one.one{
+    width: 320px;
 
+}
+}
+@media screen and (min-width:768px){
+    .section-one.one{
+    width: 768px;
 
+}
+}
 @media screen and (min-width:1200px){
-.section-one{
-    
+.section-one.one{
+    width: 1158px;
     padding-top: 120px;
     padding-bottom: 120px;
     
@@ -1028,7 +1039,7 @@ footer {
 }
 @media screen and (min-width:1200px) {
     .container-one .footer-div-one {
-        margin-right: 120px;
+        margin-right: 60px;
         margin-left: 21px;
     }
 }
@@ -1092,7 +1103,7 @@ footer {
 
 @media screen and (min-width:1200px) {
     .footer-div-two {
-        margin-right: 120px;
+        margin-right: 60px;
         margin-bottom: 0;
     
     }
@@ -1106,9 +1117,8 @@ footer {
 }
 .sm-icon {
     display: flex;   
-    margin-left: auto;
+   margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
     margin-bottom: 48px;
     width: 208px;
     height: 40px;
