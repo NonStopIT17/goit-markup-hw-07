@@ -497,6 +497,7 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 }
 /*Section 1*/
 /* phone screen*/
+
 .section-one{
     padding-top: 96px;
     padding-bottom: 96px;
@@ -524,9 +525,9 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
     margin-right: auto;
 }
 
-@media screen and (min-width:748px){
+@media screen and (min-width:768px){
     .container-one{
-        width: 748px;
+        width: 768px;
         padding-left: 12px;
         padding-right: 12px;
 }
@@ -1020,8 +1021,7 @@ footer {
 }
 /*First info*/
 .container-one .footer-div-one {
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 0;
     margin-bottom: 72px;
     
 }
@@ -1062,13 +1062,19 @@ footer {
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
+    width: 428px;
+    padding-right: 80px;
+    padding-left: 76px;
 }
+
 /*tablet screen*/
 @media screen and (min-width:768px) {
     .section-footer .footer-text {
         text-align: left;
         width: 264px;
         margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 /*Second info*/
@@ -1094,7 +1100,7 @@ footer {
 
 @media screen and (min-width:1200px) {
     .footer-div-two {
-        margin-right: 60px;
+        margin-right: 120px;
         margin-bottom: 0;
     
     }
@@ -1108,8 +1114,12 @@ footer {
 }
 .sm-icon {
     display: flex;   
-    margin: 0;
-   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-bottom: 48px;
+    width: 208px;
+    height: 40px;
 }
 .footer-list {
     margin-right: 16px;
@@ -1148,7 +1158,7 @@ footer {
 }
 }
 .footer-form-div {
-    
+    width: 396px;
     align-items: center;
 }
 /*tablet screen*/
@@ -1157,6 +1167,7 @@ footer {
         display: flex;
     }
 }
+
 .footer-form-email {
     width: 264px;
     height: 40px;  
