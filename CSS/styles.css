@@ -519,6 +519,20 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
     margin-bottom:0;
     gap: 24px;
  }
+ .container-one.div-cont{
+    width:428px ;
+}
+@media screen and (min-width:768px){
+    .container-one.div-cont{
+        width: 768px;
+      
+}
+    }
+    @media screen and (min-width:1200px){
+        .container-one.div-cont{
+        width: 1158px;
+    }
+}
  /*tablet screen*/
  @media screen and (min-width:768px){
     .section-list{
@@ -974,7 +988,7 @@ footer {
 }
 
 .footer-footer {
-    width: 320px;
+    width: 428px;
     display: block;
     text-align: center;
     padding-left: 12px;
@@ -1153,7 +1167,7 @@ footer {
     height: 40px;  
 }
 .footer-form-input {
-    width: 100%;
+    width: 396px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
