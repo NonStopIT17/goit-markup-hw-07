@@ -491,7 +491,7 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 
 
 .container-one{
-    
+    max-width: 428px;
     padding-left: 12px;
     padding-right: 12px;
     margin-left: auto;
@@ -500,14 +500,14 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 
 @media screen and (min-width:768px){
     .container-one{
-        width: 768px;
+        max-width: 768px;
         padding-left: 12px;
         padding-right: 12px;
 }
     }
     @media screen and (min-width:1200px){
         .container-one{
-        width: 1158px;
+        max-width: 1158px;
         padding-left: 12px;
         padding-right: 12px;
         
@@ -520,17 +520,17 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
     gap: 24px;
  }
  .container-one.div-cont{
-    width:428px ;
+    max-width:428px ;
 }
 @media screen and (min-width:768px){
     .container-one.div-cont{
-        width: 768px;
+        min-width: 768px;
       
 }
     }
     @media screen and (min-width:1200px){
         .container-one.div-cont{
-        width: 1158px;
+        min-width: 1158px;
     }
 }
  /*tablet screen*/
@@ -820,7 +820,7 @@ color: #434455;
     column-gap: 16px;
 }
 .companies-cust {
-    width: 428px;
+    max-width: 428px;
     padding-left: 12px;
     padding-right: 12px;
     margin-left: auto;
@@ -828,14 +828,14 @@ color: #434455;
 }
 @media screen and (min-width:768px) {
     .companies-cust{
-    width: 768px;
+    min-width: 768px;
     padding-left: 108px;
     padding-right: 108px;
     }
 }
 @media screen and (min-width:1200px) {
     .companies-cust{
-    width: 1158px;
+    min-width: 1158px;
     padding-left: 12px;
     padding-right: 12px;
     }
@@ -847,8 +847,8 @@ color: #434455;
     text-align: center;
 }
 .custemer-link {
-    width:168px;
-    height: 88px;
+    max-width:168px;
+    max-height: 88px;
     display: flex;
     background-color: #FFFFFF;
     justify-content: center;
@@ -988,7 +988,7 @@ footer {
 }
 
 .footer-footer {
-    width: 428px;
+    max-width: 428px;
     display: block;
     text-align: center;
     padding-left: 12px;
@@ -997,6 +997,7 @@ footer {
 /*tablet screen*/
 @media screen and (min-width:768px) {
     .footer-footer {
+        min-width: 768px;
         display: flex;
         flex-wrap: wrap;
         text-align: left;
@@ -1007,7 +1008,7 @@ footer {
 }
 @media screen and (min-width:1200px) {
     .footer-footer {
-        width: 1158px;
+        min-width: 1158px;
         height: 110px;
         flex-wrap: nowrap;
         padding-left: 0;
@@ -1057,7 +1058,7 @@ footer {
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    max-width: 300px;
     
 }
 
@@ -1167,7 +1168,7 @@ footer {
     height: 40px;  
 }
 .footer-form-input {
-    width: 386px;
+    max-width: 386px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
