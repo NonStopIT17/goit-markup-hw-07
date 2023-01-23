@@ -806,7 +806,7 @@ color: #434455;
     column-gap: 16px;
 }
 .companies-cust {
-    max-width: 428px;
+    width: 428px;
     padding-left: 12px;
     padding-right: 12px;
     margin-left: auto;
@@ -815,11 +815,15 @@ color: #434455;
 @media screen and (min-width:768px) {
     .companies-cust{
     width: 768px;
+    padding-left: 108px;
+    padding-right: 108px;
     }
 }
 @media screen and (min-width:1200px) {
     .companies-cust{
     width: 1158px;
+    padding-left: 12px;
+    padding-right: 12px;
     }
 }
 .customers .section-heder {
@@ -848,12 +852,7 @@ color: #434455;
         
     }
 }
-@media screen and (min-width:768px) and (max-width:1199.98px) {
-    .companies-cust{
-        padding-left: 108px;
-        padding-right: 108px;
-    }
-}
+
 
 .custemer-link:hover,
 .custemer-link:focus
