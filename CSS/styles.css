@@ -1163,11 +1163,11 @@ footer {
 }
 
 .footer-form-email {
-    width: 264px;
+   
     height: 40px;  
 }
 .footer-form-input {
-    width: 396px;
+    width: 386px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1176,6 +1176,11 @@ footer {
     padding-left: 16px;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 16px;
+}
+@media screen and (min-width:768px) {
+    .footer-form-input {
+        width: 264px;
+    }
 }
 .btn-footer {
     font-family: Roboto;
