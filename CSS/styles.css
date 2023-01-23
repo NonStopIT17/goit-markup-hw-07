@@ -896,12 +896,27 @@ color: #434455;
 
 
 .item.cust{
-    width: 320px;
+    margin-left: auto;
+    margin-bottom: 16px;
+    margin-right: auto;
 }
+@media screen and (min-width:480px) {
+.item.cust{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+}
+.companies .item {
+
+    max-width: 168px;
+    max-height: 88px;
+}
+@media screen and (min-width:480px) {
 .companies .item {
     width: calc((100%-16px)/3);
     max-width: 168px;
     max-height: 88px;
+}
 }
 
 
