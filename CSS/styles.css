@@ -76,7 +76,7 @@ textarea{
      display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 440px;
+    max-width: 480px;
      
       
 }
@@ -810,15 +810,29 @@ color: #434455;
 /*Section 4*/
 
 .companies {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+@media screen and (min-width:480px) {
+    .companies {
+        display: flex;
+        /*justify-content: center;
+    justify-content: space-around;*/
     margin-bottom: 0;;
     margin-top: 0;
     flex-wrap: wrap;
     row-gap: 72px;
-    column-gap: 16px;
+    column-gap: 80px;
+    }
 }
+/*tablet screen*/
+@media screen and (min-width:768px) {
+    .companies {
+        gap: 24px;
+    }
+}
+
 .companies-cust {
     max-width: 428px;
     padding-left: 12px;
@@ -880,17 +894,7 @@ color: #434455;
    
 }
 
-@media screen and (min-width:480px) {
-    .companies {
-        display: flex;
-    }
-}
-/*tablet screen*/
-@media screen and (min-width:768px) {
-    .companies {
-        gap: 24px;
-    }
-}
+
 .item.cust{
     width: 320px;
 }
@@ -909,11 +913,7 @@ color: #434455;
        
     }
 }
-@media screen and (min-width:1200px) {
-    .companies {
-        gap: 0;
-    }
-}
+
 .section-heder.customers-p{
     margin-top: 0;
     margin-bottom: 72px;
@@ -922,10 +922,8 @@ color: #434455;
 
 .companies .custemer-link {
     display: flex;
-
     justify-content: center;
     align-items: center;
-    
     color: #8E8F99;
     border: 1px solid #8E8F99;
     border-radius: 4px;
@@ -1164,8 +1162,8 @@ footer {
    
     height: 40px;  
 }
-.footer-form-input {
-    width: 386px;
+.footer-form-input{
+    width: 236px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1175,6 +1173,13 @@ footer {
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 16px;
 }
+@media screen and (min-width:480px) {
+    .footer-form-input {
+    width: 386px;
+    
+    
+}
+    }
 @media screen and (min-width:768px) {
     .footer-form-input {
         width: 264px;
