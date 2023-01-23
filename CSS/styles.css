@@ -86,6 +86,7 @@ textarea{
     display: flex;
     align-items: unset;
     max-width: 768px;
+    
 }
 }
 /*desktop screen*/
@@ -111,6 +112,8 @@ textarea{
             align-items: center;
             margin-left: 0;
             justify-content: flex-start;
+            height: 36px;
+            padding-top: 10px;
     }
 }
 .logo {
@@ -297,6 +300,8 @@ textarea{
     .info{
         display: block;
         margin: 0;
+        height: 36px;
+        padding-bottom: 20px;
     }
 }
 /*desktop screen*/
@@ -479,32 +484,12 @@ screen and (min-resolution: 2dppx) and (min-width: 769px) {
 .section-one{
     padding-top: 96px;
     padding-bottom: 96px;
-    margin-left: auto;
-    margin-right: auto;
+    
     width: 100vw;
 
 }
 
-@media screen and (min-width:428px){
-    .section-one.one{
-    width: 320px;
 
-}
-}
-@media screen and (min-width:768px){
-    .section-one.one{
-    width: 768px;
-
-}
-}
-@media screen and (min-width:1200px){
-.section-one.one{
-    width: 1158px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    
-}
-}
 .container-one{
     
     padding-left: 12px;
@@ -685,9 +670,7 @@ color: #434455;
     margin-top: 0;
     margin-bottom: 0;
 }
-.section-img .img:not(:last-child){
-    margin-right: 24px;
-}
+
 /*Section 3*/
 .section-header.team{
     text-align: center;
@@ -823,7 +806,7 @@ color: #434455;
     column-gap: 16px;
 }
 .companies-cust {
-    width: 320px;
+    max-width: 428px;
     padding-left: 12px;
     padding-right: 12px;
     margin-left: auto;
@@ -846,8 +829,8 @@ color: #434455;
     text-align: center;
 }
 .custemer-link {
-    width: 118px;
-    height: 56px;
+    width:168px;
+    height: 88px;
     display: flex;
     background-color: #FFFFFF;
     justify-content: center;
@@ -862,8 +845,7 @@ color: #434455;
 }
 @media screen and (min-width:768px) {
     .custemer-link{
-        width:168px;
-        height: 88px;
+        
     }
 }
 @media screen and (min-width:768px) and (max-width:1199.98px) {
